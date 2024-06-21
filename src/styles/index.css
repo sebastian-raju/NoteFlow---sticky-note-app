@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*
+    https://github.com/tailwindlabs/tailwindcss/discussions/2394
+    https://github.com/tailwindlabs/tailwindcss/pull/5732
+*/
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+
+
+/* .bg-pattern{
+  background-image: radial-gradient(#d49439 1.5px, transparent 1.5px), radial-gradient(#d49439 1.5px, transparent 1.5px);
+background-size: 62px 62px;
+background-position: 0 0, 31px 31px;
+background-color: #fffbeb;
+} */
+
+
+/* background-image: radial-gradient(#d49439 1.5px, transparent 1.5px);
+  background-size: 39px 39px;
+  background-color: #fffbeb; */
+
